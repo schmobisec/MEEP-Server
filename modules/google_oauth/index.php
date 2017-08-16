@@ -82,8 +82,6 @@ if (isset($authUrl)){
 		$row = mysql_fetch_array($result);
 		$user_count = $row[0];
 	}
-	// 구글에서 제공하는 프로필 이미지 보여주기
-	echo '<img src="'.$user->picture.'" style="float: right;margin-top: 33px;" />';
 
 	if($user_count){ // 이미 가입자 정보가 있으면 세션정보 생성
         echo '환영합니다 '.$user->name.'님! [<a href="'.$redirect_uri.'?logout=1">Log Out</a>]';
