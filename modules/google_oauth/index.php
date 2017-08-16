@@ -4,8 +4,8 @@ session_start();
 require_once ('libraries/Google/autoload.php');
 
 // https://console.developers.google.com/ 에서 client ID and secret 생성
-$client_id = ''
-$client_secret = ''
+$client_id = '';
+$client_secret = '';
 $redirect_uri = ''; // 본인 도메인으로 수정하세요
 
 //incase of logout request, just unset the session var
