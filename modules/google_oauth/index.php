@@ -69,6 +69,7 @@ if (isset($authUrl)){
 	echo '<h2>Google OAuth 2.0 Login</h2>';
 	echo '<div>Google 아이콘 누르세요.</div>';
 	echo '<a class="login" href="' . $authUrl . '"><img src="modules/google_oauth/images/google-login-button.png" /></a>';
+	echo '<a class="login" href="' . $authUrl . '"><img src="images/google-login-button.png" /></a>';
 	echo '</div>';
 } else {
 	$user = $service->userinfo->get(); // google 사용자 정보 가져오기
