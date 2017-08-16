@@ -70,9 +70,7 @@ if (isset($authUrl)){
 	echo '<div>Google 아이콘 누르세요.</div>';
 	echo '<a class="login" href="' . $authUrl . '"><img src="modules/google_oauth/images/google-login-button.png" /></a>';
 	echo '</div>';
-
 } else {
-
 	$user = $service->userinfo->get(); // google 사용자 정보 가져오기
 
 	include_once 'connect.php';
@@ -83,12 +81,10 @@ if (isset($authUrl)){
 		$row = mysql_fetch_array($result);
 		$user_count = $row[0];
 	}
-
 	// 구글에서 제공하는 프로필 이미지 보여주기
 	echo '<img src="'.$user->picture.'" style="float: right;margin-top: 33px;" />';
 
-	if($user_count){ // 이미 가입자 정보가 있으면
-		// 세션정보 생성
+	if($user_count){ // 이미 가입자 정보가 있으면 세션정보 생성
         echo '환영합니다 '.$user->name.'님! [<a href="'.$redirect_uri.'?logout=1">Log Out</a>]';
     }
 	else {
@@ -96,21 +92,9 @@ if (isset($authUrl)){
 		$id = $user->id;
 		$name = $user->name;
 		$email = $user->email;
-		$link = $user->link;
-		$picture = $user->picture;
-		$query ="INSERT INTO google_users (google_id, google_name, google_email, google_link, google_picture_link) VALUES ('$id','$name','$email','$link','$picture')";
+		$query ="INSERT INTO google_users (google_id, google_name, google_email) VALUES ('$id','$name','$email')";
 		mysql_query($query);
     }
-
-	// 구글에서 보내주는 정보를 상세하기 확인할 수 있다
-	/*
-	echo '<pre>';
-	print_r($user);
-	echo '</pre>';
-	//*/
 }
 echo '</div>';
-
-
 ?>
-
