@@ -1,7 +1,7 @@
 <?php
-$db['host'] = "localhost";
-$db['name'] = "php";
-$db['user'] = "livefacter";
-$db['pass'] = "\$ProJectAct03";
-$db['port'] = "3306";
+$db['host'] = "";
+$db['name'] = "";
+$db['user'] = "";
+$db['pass'] = "";
+$db['port'] = "";
 ?>
