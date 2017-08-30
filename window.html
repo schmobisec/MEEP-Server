@@ -10,97 +10,66 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="home/assets/css/main.css" />
-
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		
-		<script type="home/text/javascript">
-<!-- password recheck 패스워드 재확인 자바스크립트>		
-	window.onload=function(){
-	document.getElementById('my-form').onsubmit=function(){
-	var pass=document.getElementById('pass').value;
-	var passCheck=document.getElementById('pass-check').value;
-   
-	if(pass==passCheck){
-		alert('Success');
-	}else{
-		alert('False');
-     return false; 
-	} 
-  }
- }
- 
-</script>
 	</head>
 	<body>
 
 		<!-- Header -->
-			<section id="header"> <!-- index 홈페이지 -->
+			<section id="header">
 				<header>
 					<h1>Certificate Management</h1>
 					<p>수정중..</p>
 				</header>
 				<footer>
-					<a href="2. Banner.html" class="button style">Proceed as anticipated</a>
-
+					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
 				</footer>
 			</section>
 
 		<!-- Banner -->
-		<!--
 			<section id="banner">
 				<header>
-					<h2>Certificate Management</h2>
+					<h2>Fill-In-Request</h2>
 				</header>
 				<h1>Fill-In Details to personalize your X.509 Certificate</h1>
+				<p><input type="text" name="id" placeholder="아이디" /> 
+				<input type="password" name="password" placeholder="1234" /></p>
 				<footer>
-					<a href="#first" class="button style">Act on this message</a>
+					<a href="#first" class="button style2 scrolly">Act on this message</a>
 				</footer>
 			</section>		
 						
 
 		<!-- Feature 1 -->
-			<!--<article id="first" class="container box style3">
+			<article id="first" class="container box style1 left">
 				
 				<div class="inner">
 					<header>
-	
-					<h2>Fill-In-Request</h2>
-					<p>Fill-In Details To Personalize Your X.509 Certificate.</p>
-
+						<h2>Fill-In-Request<br />
+						-------------------</h2>
 					</header>
-					<p>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="name" name="name" placeholder="Name"> </p>
-					<p>Organization&nbsp&nbsp
-					<select name="job">
-					<option value="">Select Country</option>
-					<option value="">Korean</option>
-					<option value="">America</option>
-					<option value="">Africa</option>
-					</select>
-					</p>  
-					
+					<p>Email : theldbsrjs@gmail.</p>
+					<p>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" value="name"></p>
+					<p>Organization</p>
+					<p>Algorithm</p>
+					<p>Key Size</p>
 				<footer>
-					<a href="#second" class="button style">Next Level</a>
+					<a href="#second" class="button style2 scrolly">Next Level</a>
 				</footer>
 				</div>
 			</article>
 
 		<!-- Feature 2 -->
-		<!--	<article id="second" class="container box style3">
+			<article id="second" class="container box style1 left">
 				
 				<div class="inner">
 					<header>
-					<h2>Store Certificate</h2>
-					<p>Storing Personal X.509 Certificate And Private Key</p>
+						<h2>야이 시바 왜케어려<br />
+						dolor sit amet</h2>
 					</header>
-			<form id="my-form">
-				<label for="pass">For Added security. enter Passphrase to encrtpt your private Key</label>
-				<input type="password" name="pass" id="pass" /></br>
-				<input type="password" id="pass-check" /> </br>
-				<input type="submit" value="Done" />
-			</form>
+					<p>Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia pellentesque eleifend vitae est elit tristique velit tempus etiam.</p>
 				<footer>
-					<a href="#final" class="button style">Next Level</a>
+					<a href="#final" class="button style2 scrolly">Next Level</a>
 				</footer>
 				</div>
 			</article>
@@ -128,44 +97,27 @@
 				</div>
 			</article>
 
-		<!-- feature 3 -->
-			<!--<article id="final" class="container box style3">
+		<!-- Contact -->
+			<article id="final" class="container box style3">
 				<header>
-					<h2>Certificate Management</h2>
-					<p>Personal Certificate (VaLid Until ?/?/? ?? PM)</p>
+					<h2>Nisl sed ultricies</h2>
+					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
 				</header>
-					<p>Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp고정값</p>
-					<p>Name  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 고정값</p>
-         <p>
-		 <a href="#" class="button">Certificate Download(CTR)</a>
-		 <a href="#" class="button">Certificate Download(PKCS)</a>
-		 <a href="#" class="button">Root CA</a>
-		 <a href="#" class="button">Email-CA</a></p>
-		 <br>
-					
-		<p>인증서 생성 &nbsp&nbsp&nbsp&nbsp<a href="#" class="button">Create Certificate</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		인증서 제거 &nbsp&nbsp&nbsp&nbsp<a href="#" class="button">Remove Certificate</a>  </p>
-				<footer>
-					<a href="#final1" class="button style">Next Level</a>
-				</footer>
-		</article>
-		
-		<!-- feature 4 -->
-		<!--<article id="final1" class="container box style3">
-		<div class="inner">
-				<header>
-					<h2>Store Certificate</h2>
-					<p>Storing Personal X.509 Certificate And Private Key</p>
-				</header>
-			<form id="my-form">
-				<label for="pass">For Added security. enter Passphrase to encrtpt your private Key</label>
-				<input type="password" name="pass" id="pass" /></br>
-				<input type="password" id="pass-check" /> </br>
-				<input type="submit" value="Done" />
-			</form>
-
-			</div>
-		</article>	-->
+				<form method="post" action="#">
+					<div class="row 50%">
+						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
+						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
+						<div class="12u$">
+							<textarea name="message" placeholder="Message"></textarea>
+						</div>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</article>
 
 		<!-- Generic -->
 		<!--
@@ -341,15 +293,13 @@
 		</section> 
 
 		<!-- Scripts -->
-			<script src="home/assets/js/jquery.min.js"></script>
-			<script src="home/assets/js/jquery.scrolly.min.js"></script>
-			<script src="home/assets/js/jquery.poptrox.min.js"></script>
-			<script src="home/assets/js/skel.min.js"></script>
-			<script src="home/assets/js/util.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="home/assets/js/main.js"></script>
-
-			
+			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
