@@ -82,18 +82,17 @@ if (isset($authUrl)){
 		$row = mysql_fetch_array($result);
 		$user_count = $row[0];
 	}
-
-	if($user_count){ // 이미 가입자 정보가 있으면 세션정보 생성
-        echo '환영합니다 '.$user->name.'님! [<a href="'.$redirect_uri.'?logout=1">Log Out</a>]';
-    }
-	else {
-        echo $user->name.'님, 등록 감사합니다! [<a href="'.$redirect_uri.'?logout=1">Log Out</a>]';
+	
+	//DB 테이블에 구글 ID 존재 하지 않을 시 DB에 등록
+	if(!$user_count){ 
 		$id = $user->id;
 		$name = $user->name;
 		$email = $user->email;
 		$query ="INSERT INTO google_users (google_id, google_name, google_email) VALUES ('$id','$name','$email')";
 		mysql_query($query);
     }
+
+	include_once '../certificate/cert_management.php';
 }
 echo '</div>';
 ?>
